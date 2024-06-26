@@ -1,0 +1,26 @@
+:root {
+  --btn-top: 20px;
+  --btn-left: calc(100vw - 240px);
+}
+#back-btn {
+  position: absolute;
+  top: var(--btn-top);
+  left: var(--btn-left);
+  outline: none;
+  border: 0;
+  background-color: #433d98;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  transition: .2s;
+}
+
+#back-btn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px #000;
+}
+
+#back-btn:active {
+  top: calc(var(--btn-top) + 5px);
+  left: calc(var(--btn-left) + 5px);
+}
