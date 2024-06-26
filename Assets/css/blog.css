@@ -1,5 +1,5 @@
 :root {
-  --btn-top: 20px;
+  --btn-top: 10px;
   --btn-left: calc(100vw - 240px);
 }
 #back-btn {
