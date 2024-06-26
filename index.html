@@ -8,25 +8,26 @@
 <body>
   <header>
     <h1 id="page-title" style="display: inline;">My Blog</h1>
-    <div style="position:absolute; border:1px solid black; width:5%; display: inline; text-align: right;">
+    <!-- <div style="position:absolute; border:1px solid black; width:5%; display: inline;">
       <span style="position:relative;border:1px solid black; width:5%;">
-        Dark
+        &#9728;
       </span>
-    </div>
+    </div> -->
   </header>
   <main>
     <form class="flex-container">
       <h2 id="form-title" class="flex-item">What's on your mind?</h2>
-      <label for="username-input" id="username-lab" class="form-labels flex-item">Username<span>*</span></label> <br>
+      <label for="username-input" id="username-lab" class="form-labels flex-item">Username<span class="require">*</span></label> <br>
       <input id="username-input" class="form-labels flex-item" type="text" name="username-input" required/> <br>
-      <label for="title-input" class="form-labels flex-item" id="title-lab">Title<span>*</span></label> <br>
+      <label for="title-input" class="form-labels flex-item" id="title-lab">Title<span class="require">*</span></label> <br>
       <input class="form-labels flex-item" id="title-input" type="text" name="title-input" required/> <br>
-      <label for="content-input" class="form-labels flex-item" id="content-lab">Content<span>*</span></label> <br>
-      <textarea id="content-input" class="flex-item" name="content-input" required cols="50" rows="10" style="resize:none;"></textarea>
+      <label for="content-input" class="form-labels flex-item" id="content-lab">Content<span class="require">*</span></label> <br>
+      <textarea id="content-input" class="flex-item" name="content-input" required cols="50" rows="10" style="resize:none;"></textarea> <br>
+      <input type="submit" id="submit-btn" class="flex-item"/>
     </form>
   </main>
-  <footer>
-
+  <footer id="page-footer">
+    &copy; 2024 Yucheng Wang
   </footer>
   
 </body>
