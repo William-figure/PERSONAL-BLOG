@@ -12,19 +12,20 @@ input, textarea {
   border-bottom: 2px solid #ff0000;
   padding: 10px 20px 10px 20px;
   border-radius: 5px;
-  box-shadow: 20px #202020; 
+  box-shadow: 15px #202020; 
+  transition: .2s;
 }
 
 input:hover, textarea:hover {
   outline: none;
   border-radius: 5px;
-  box-shadow: 15px 15px 50px #b3beb2;
+  box-shadow: 0px 0px 15px #b3beb2;
   transform: matrix();
 }
 
 input:focus, textarea:focus {
   outline: none;
-  box-shadow: 15px 15px 50px #b3beb2;
+  box-shadow: 0px 0px 50px #b3beb2;
 }
 
 #submit-btn {
@@ -37,5 +38,6 @@ input:focus, textarea:focus {
 }
 
 #submit-btn:active {
+  box-shadow: 0px 0px 30px #b3beb2;
   background-color: #bebebe;
 }
