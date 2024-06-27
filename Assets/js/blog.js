@@ -1,3 +1,4 @@
+"use strict";
 const blogTitleObj = document.querySelector("#blog-page-title");
 
 toggleCircleObj.addEventListener("click", () => {
@@ -15,3 +16,10 @@ toggleCircleObj.addEventListener("click", () => {
     currentTcColor = "#000";
   }
 });
+
+const backBtnObj = document.querySelector('#back-btn');
+backBtnObj.addEventListener('click', () => {
+  window.open("../../index.html", "_self");
+})
+
+
