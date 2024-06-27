@@ -17,22 +17,19 @@ toggleCircleObj.addEventListener("click", () => {
 });
 
 const submitBtnObj = document.querySelector('#submit-btn');
-const userInput = document.querySelector('#user-input')
-const titleInput = document.querySelector('#title-input');
-const contentInput = document.querySelector('#content-input');
+const userInputObj = document.querySelector('#username-input');
+const titleInputObj = document.querySelector('#title-input');
+const contentInputObj = document.querySelector('#content-input');
 submitBtnObj.addEventListener('click', (event) => {
   event.preventDefault();
+  let userInput = userInputObj.value;
+  let titleInput = titleInputObj.value;
+  let contentInput = contentInputObj.value;
   if(userInput && titleInput && contentInput) {
-    let articleAuthor = userInput.value;
-    let articleTitle = titleInput.value;
-    let articleContent = contentInput.value;
-    const postIt = document.querySelector('#post-target');
-    postIt.innerHTML += `
-      <article>
-        <h3>${articleTitle}</h3>
-        <pre>${articleContent}</pre>
-        <h4>${articleAuthor}</h4>
-      </article> 
-    `
-  } 
+    localStorage.setItem('articleAuthor', userInput);
+    localStorage.setItem('articleTitle', titleInput);
+    localStorage.setItem('articleContent', contentInput);
+  } else {
+    alert("Missing Value!");
+  }
 })
