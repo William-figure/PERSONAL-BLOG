@@ -43,6 +43,9 @@ body {
   box-shadow: 0px 0px 25px;
 }
 
+#toggle-circle:active {
+  top: calc(var(--tog-circle-top) + 5px);
+}
 
 .flex-container {
   margin-left: 50%;
