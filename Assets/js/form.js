@@ -41,8 +41,8 @@ submitBtnObj.addEventListener('click', (event) => {
   userInput.push(userInputObj.value);
   titleInput.push(titleInputObj.value);
   contentInput.push(contentInputObj.value);
-  localStorage.setItem('articleAuthor', articleForm.articleAuthor);
-  localStorage.setItem('articleTitle', articleForm.articleTitle);
-  localStorage.setItem('articleContent', articleForm.articleContent);
-  localStorage.setItem('articleDate', articleForm.articleDate);
+  localStorage.setItem('articleAuthor', JSON.stringify(articleForm.articleAuthor));
+  localStorage.setItem('articleTitle', JSON.stringify(articleForm.articleTitle));
+  localStorage.setItem('articleContent', JSON.stringify(articleForm.articleContent));
+  localStorage.setItem('articleDate', JSON.stringify(articleForm.articleDate));
 })
