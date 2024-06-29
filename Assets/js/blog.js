@@ -22,22 +22,11 @@ backBtnObj.addEventListener("click", () => {
   window.open("../../index.html", "_self");
 });
 
-const articleAuthor = [];
-articleAuthor.push(localStorage.getItem("articleAuthor"));
-const articleTitle = [];
-articleTitle.push(localStorage.getItem("articleTitle"));
-const articleContent = [];
-articleContent.push(localStorage.getItem("articleContent"));
-
-console.log(articleAuthor);
-console.log(articleTitle);
-console.log(articleContent);
-
 const postIt = document.querySelector("#post-target");
 postIt.innerHTML += `
   <article>
-    <h2>${articleTitle[0]}</h2>
-    <pre>${articleContent[0]}</pre>
-    <h6>${articleAuthor[0]}</h6>
+    <h2>${articleForm.articleTitle[i]}</h2>
+    <pre>${articleForm.articleContent[i]}</pre>
+    <h6>${articleForm.articleAuthor[i]}</h6>
   </article>
 `;
