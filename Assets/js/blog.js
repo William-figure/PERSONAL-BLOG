@@ -1,5 +1,6 @@
 "use strict";
 const blogTitleObj = document.querySelector("#blog-page-title");
+const blogContainers = document.querySelectorAll('.article-container');
 
 toggleCircleObj.addEventListener("click", () => {
   if (currentTcColor == "#000") {
@@ -8,6 +9,9 @@ toggleCircleObj.addEventListener("click", () => {
     bodyObj.style.color = "#fff";
     blogTitleObj.style.color = "#fff";
     currentTcColor = "#fff";
+    for (const blogContainer of blogContainers) {
+      console.log(typeof blogContainer)
+    }
   } else {
     toggleCircleObj.style.backgroundColor = "#000";
     bodyObj.style.backgroundColor = "#fff";
@@ -28,9 +32,8 @@ const articleDate = JSON.parse(localStorage.getItem("articleDate"))
 const postIt = document.querySelector("#post-target");
 for (let i = 0; i < articleTitle.length; i++) {
   postIt.innerHTML += `
-    <article class="flex-container-column">
+    <article class="article-container flex-container-column">
       <h2 class="article-title flex-item">${articleTitle[i]}</h2>
-      <hr>
       <pre class="article-content flex-item">${articleContent[i]}</pre>
       <h6 class="article-author flex-item">${articleAuthor[i]} ${articleDate}</h6>
     </article>
