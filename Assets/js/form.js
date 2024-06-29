@@ -45,4 +45,5 @@ submitBtnObj.addEventListener('click', (event) => {
   localStorage.setItem('articleTitle', JSON.stringify(articleForm.articleTitle));
   localStorage.setItem('articleContent', JSON.stringify(articleForm.articleContent));
   localStorage.setItem('articleDate', JSON.stringify(articleForm.articleDate));
+  window.open("index.html", "_blank")
 })
