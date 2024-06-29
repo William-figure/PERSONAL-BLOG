@@ -29,7 +29,7 @@ toggleCircleObj.addEventListener("click", () => {
 
 const backBtnObj = document.querySelector("#back-btn");
 backBtnObj.addEventListener("click", () => {
-  window.open("../../index.html", "_self");
+  window.open("index.html", "_self");
 });
 for (let i = 0; i < articleTitle.length; i++) {
   postIt.innerHTML += `
