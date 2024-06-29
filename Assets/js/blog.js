@@ -21,12 +21,13 @@ const backBtnObj = document.querySelector("#back-btn");
 backBtnObj.addEventListener("click", () => {
   window.open("../../index.html", "_self");
 });
-
+console.log(userInput);
 const postIt = document.querySelector("#post-target");
 postIt.innerHTML += `
   <article>
-    <h2>${articleForm.articleTitle[i]}</h2>
-    <pre>${articleForm.articleContent[i]}</pre>
-    <h6>${articleForm.articleAuthor[i]}</h6>
+    <h2>${localStorage.getItem("articleTitle")}</h2>
+    <hr>
+    <pre>${localStorage.getItem("articleContent")}</pre>
+    <h6>${localStorage.getItem("articleAuthor")}</h6>
   </article>
 `;
