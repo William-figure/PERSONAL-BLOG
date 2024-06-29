@@ -1,12 +1,22 @@
 "use strict";
+const articleTitle = JSON.parse(
+  localStorage.getItem("articleTitle").split(",")
+);
+const articleContent = JSON.parse(
+  localStorage.getItem("articleContent").split(",")
+);
+const articleAuthor = JSON.parse(
+  localStorage.getItem("articleAuthor").split(",")
+);
+const articleDate = JSON.parse(localStorage.getItem("articleDate"));
+const postIt = document.querySelector("#post-target");
 const blogTitleObj = document.querySelector("#blog-page-title");
-
 toggleCircleObj.addEventListener("click", () => {
   if (currentTcColor == "#000") {
     toggleCircleObj.style.backgroundColor = "#fff";
     bodyObj.style.backgroundColor = "#000";
     bodyObj.style.color = "#fff";
-    blogTitleObj.style.color = "#fff";
+    blogTitleObj.style.color = "#3a3a3a";
     currentTcColor = "#fff";
   } else {
     toggleCircleObj.style.backgroundColor = "#000";
@@ -36,3 +46,4 @@ for (let i = 0; i < articleTitle.length; i++) {
     </article>
   `;
 }
+

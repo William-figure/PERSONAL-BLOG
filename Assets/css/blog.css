@@ -1,6 +1,8 @@
 :root {
   --btn-top: 15px;
   --btn-left: calc(100vw - 240px);
+  --green: #48ff05be;
+  --cyan: #00d8f4;
 }
 #back-btn {
   position: absolute;
@@ -23,4 +25,36 @@
 #back-btn:active {
   top: calc(var(--btn-top) + 5px);
   left: calc(var(--btn-left) + 5px);
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  background: linear-gradient(var(--green), var(--cyan));
+  margin: 1rem;
+}
+
+.flex-container-column:hover {
+  box-shadow: 0px 0px 20px red;
+}
+.flex-item {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.flex-item:nth-child(1) {
+  margin-top: .5rem;
+  border-bottom: 2px solid black;
+}
+.flex-item:nth-child(2) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.flex-item:nth-child(3) {
+  text-align: right;
+  color: #4f4f4f;
+  margin-bottom: .5rem;
 }
