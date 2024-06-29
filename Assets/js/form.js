@@ -22,9 +22,9 @@ const userInputObj = document.querySelector('#username-input');
 const titleInputObj = document.querySelector('#title-input');
 const contentInputObj = document.querySelector('#content-input');
 const d = new Date();
-const userInput = [];
-const titleInput = [];
-const contentInput = [];
+const userInput = ['William', 'William'];
+const titleInput = ['Hello', 'Bye'];
+const contentInput = ['How are you?', 'See you Soon.'];
 const articleForm = {
   articleAuthor: userInput,
   articleTitle: titleInput,
